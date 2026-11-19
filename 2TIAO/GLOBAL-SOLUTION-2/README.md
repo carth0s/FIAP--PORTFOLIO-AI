@@ -44,13 +44,14 @@ Para solucionar esse desafio, o VozCidadã AI integra múltiplas frentes da Inte
 
 Abaixo encontra-se a descrição da organização da raiz do projeto e a finalidade de cada diretório e arquivo:
 
-* **`data/`** Armazena todas as bases de dados utilizadas no projeto, incluindo arquivos estruturados (como CSV, Excel, JSON), bases de dados sintéticas e outros formatos brutos ou processados.
-
 * **`docs/`** Centraliza a documentação técnica e de negócio do projeto.
 
-* **`notebooks/`** Destinado a cadernos interativos (como *Jupyter Notebooks* ou *Google Colab*) utilizados para análise exploratória de dados, experimentação de algoritmos, prototipagem de modelos, etc.
-
 * **`src/`** Contém todo o código-fonte desenvolvido para o projeto. Dependendo do âmbito da atividade, pode incluir arquivos como: scripts (Python, R, JS), ficheiros web (HTML), firmware para hardware (ESP32/Arduino), além de APIs, microsserviços e ficheiros de modelos e inferências.
+   * **`app.py`** Interface web interativa e dashboard de indicadores desenvolvido em Streamlit.
+   * **`governanca.py`** Módulo de anonimização de dados sensíveis (LGPD) e geração de rastreabilidade (SHA-256).
+   * **`visao_computacional.py`** Pipeline híbrido de análise de imagens com YOLOv8 e OpenCV.
+   * **`agente_ia.py`** Agente de IA Generativa (Google Gemini + Pydantic) com mecanismo de contingência (fallback).
+   * **`requirements.txt`** Lista de dependências e bibliotecas Python do projeto.
 
 * **`README.md`** Este ficheiro. Funciona como o guia principal de introdução, configuração e contextualização do projeto.
 
