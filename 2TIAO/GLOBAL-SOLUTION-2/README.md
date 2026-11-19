@@ -15,11 +15,10 @@
 ## Nome do grupo
 
 ## 👨‍🎓 Integrantes: 
-- <a href="Link do perfil no LinkedIn ou GitHub">Nome do integrante 1</a>
-- <a href="Link do perfil no LinkedIn ou GitHub">Nome do integrante 2</a>
-- <a href="Link do perfil no LinkedIn ou GitHub">Nome do integrante 3</a> 
-- <a href="Link do perfil no LinkedIn ou GitHub">Nome do integrante 4</a> 
-- <a href="Link do perfil no LinkedIn ou GitHub">Nome do integrante 5</a>
+- Carlos Daniel Silveira do Nascimento - RM88439
+- Mauricio Jose Ferlin Tonnera - RM565469 
+- Rodrigo Portugal Santos - RM564773
+
 
 ## 👩‍🏫 Professores:
 
