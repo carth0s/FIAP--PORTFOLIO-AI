@@ -62,11 +62,11 @@ Abaixo encontra-se a descrição da organização da raiz do projeto e a finalid
 
 ### 🧠 Decisões Técnicas
 
-> Interface Web em Streamlit (Python): Escolhida para permitir prototipagem ágil e integração nativa com bibliotecas de Ciência de Dados, Visão Computacional e IA Generativa em um único ecossistema.
-> Governança e Anonimização Local (Regex + SHA-256): Implementada localmente antes das chamadas externas à LLM para garantir conformidade com a LGPD (Privacy by Design) e rastreabilidade sem exposição de dados pessoais em texto claro.
-> Visão Computacional Híbrida (YOLOv8n + OpenCV): O modelo pré-treinado yolov8n.pt (dataset COCO) foi otimizado com cache de memória (@st.cache_resource) e redimensionamento (640px) para inferência rápida em CPU. Como o dataset COCO não possui classes específicas para entulho ou buracos no asfalto (limitação documentada da POC), combinamos a detecção de objetos com a análise de densidade de bordas via cv2.Canny e com a interpretação multimodal do agente LLM. Em etapas futuras, recomenda-se aplicar Transfer Learning com datasets específicos de resíduos urbanos (ex.: TACO).
-> Agente de IA Generativa Estruturado (Google Gemini + Pydantic) e Resiliência: Utilizou-se saída estruturada via JSON Schema (Pydantic) para garantir integração determinística com o roteamento de secretarias, além de controle de timeout (5s) e plano de contingência local (fallback por regras de NLP) para evitar falhas de disponibilidade (erro HTTP 503).
-> Segurança de Credenciais: A chave da API (GEMINI_API_KEY) não é versionada no repositório, sendo informada de forma mascarada em tempo de execução pela interface.
+> - Interface Web em Streamlit (Python): Escolhida para permitir prototipagem ágil e integração nativa com bibliotecas de Ciência de Dados, Visão Computacional e IA Generativa em um único ecossistema.
+> - Governança e Anonimização Local (Regex + SHA-256): Implementada localmente antes das chamadas externas à LLM para garantir conformidade com a LGPD (Privacy by Design) e rastreabilidade sem exposição de dados pessoais em texto claro.
+> - Visão Computacional Híbrida (YOLOv8n + OpenCV): O modelo pré-treinado yolov8n.pt (dataset COCO) foi otimizado com cache de memória (@st.cache_resource) e redimensionamento (640px) para inferência rápida em CPU. Como o dataset COCO não possui classes específicas para entulho ou buracos no asfalto (limitação documentada da POC), combinamos a detecção de objetos com a análise de densidade de bordas via cv2.Canny e com a interpretação multimodal do agente LLM. Em etapas futuras, recomenda-se aplicar Transfer Learning com datasets específicos de resíduos urbanos (ex.: TACO).
+> - Agente de IA Generativa Estruturado (Google Gemini + Pydantic) e Resiliência: Utilizou-se saída estruturada via JSON Schema (Pydantic) para garantir integração determinística com o roteamento de secretarias, além de controle de timeout (5s) e plano de contingência local (fallback por regras de NLP) para evitar falhas de disponibilidade (erro HTTP 503).
+> - Segurança de Credenciais: A chave da API (GEMINI_API_KEY) não é versionada no repositório, sendo informada de forma mascarada em tempo de execução pela interface.
 
 ### 📢 Observações Gerais
 
