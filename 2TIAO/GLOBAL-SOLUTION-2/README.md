@@ -58,7 +58,7 @@ Abaixo encontra-se a descrição da organização da raiz do projeto e a finalid
 ### 🔗 Links do Projeto
 
 
-* **[Vídeo de Entrega no YouTube]**(https://youtu.be/7uSkTmNIm6E?is=FQ4ViAOyJRm4uTjF) - Sistema sendo executado na prática.
+* **[Vídeo de Entrega no YouTube](https://youtu.be/7uSkTmNIm6E?is=FQ4ViAOyJRm4uTjF)** - Sistema sendo executado na prática.
 
 ### 🧠 Decisões Técnicas
 
