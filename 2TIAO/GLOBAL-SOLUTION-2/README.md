@@ -30,7 +30,13 @@
 
 ## 📜 Descrição
 
-*Descreva aqui seu projeto em detalhes de forma estruturada e organizada*
+O VozCidadã AI é uma Prova de Conceito (POC) desenvolvida para a Global Solution 2026.2 (CitizenTech – Tecnologia centrada no cidadão), alinhada diretamente ao ODS 11 (Cidades e Comunidades Sustentáveis) e ao ODS 9 (Indústria, Inovação e Infraestrutura) da ONU.
+Nos centros urbanos, o cidadão enfrenta burocracia, falta de transparência e lentidão para reportar problemas cotidianos de zeladoria e infraestrutura (como descarte irregular de lixo, buracos nas vias e falhas de iluminação pública), enquanto gestores municipais lidam com triagem manual e chamados mal classificados.
+Para solucionar esse desafio, o VozCidadã AI integra múltiplas frentes da Inteligência Artificial e Engenharia de Software em um fluxo automatizado, seguro e acessível:
+- Governança e Privacidade desde a Concepção (LGPD): Antes de qualquer dado ser processado externamente, um módulo de sanitização local detecta e anonimiza CPFs, telefones e e-mails via expressões regulares (Regex), gerando um protocolo auditável com hash criptográfico (SHA-256) e timestamp UTC.
+- Visão Computacional Híbrida: A imagem enviada pelo cidadão é processada por um pipeline que combina detecção de objetos com YOLOv8 e análise de densidade de bordas via OpenCV (Canny) para identificar elementos urbanos e irregularidades visuais.
+- Agente Inteligente de Triagem (IA Generativa): Um agente baseado na API do Google Gemini (gemini-3.8-flash) com saída estruturada (Pydantic) cruza o relato anonimizado e as evidências visuais para classificar a categoria da demanda, definir o nível de urgência, rotear para a secretaria competente e gerar uma resposta clara e inclusiva ao cidadão.
+- Painel de Monitoramento e Auditoria: Exibe indicadores de impacto (ODS 11), métricas de conformidade LGPD e uma tabela rastreável que distingue claramente registros de Base Simulada dos Testes Reais da POC.
 
 ## 📁 Estrutura de pastas 
 
