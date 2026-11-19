@@ -40,8 +40,6 @@ Para solucionar esse desafio, o VozCidadã AI integra múltiplas frentes da Inte
 
 ## 📁 Estrutura de pastas 
 
-*‼️ OBSERVAÇÃO DO TUTOR -- favor remover antes de subir o trabalho -- não há a obrigação de usar todas as pasta propostas, use apenas o que fizer SENTIDO para a entrega. Também está permitido criar mais pastas conforme necessidade visando a melhor organização do projeto. ‼️*
-
 Abaixo encontra-se a descrição da organização da raiz do projeto e a finalidade de cada diretório e arquivo:
 
 * **`docs/`** Centraliza a documentação técnica e de negócio do projeto.
@@ -59,9 +57,8 @@ Abaixo encontra-se a descrição da organização da raiz do projeto e a finalid
 
 ### 🔗 Links do Projeto
 
-*Substitua ou duplique a estrutura abaixo para cada link relevante do projeto:*
 
-* **[Nome do Link (ex: Vídeo de Entrega no YouTube)]**(http://url-aqui) - Breve descrição.
+* **Vídeo de Entrega no YouTube**(https://youtu.be/7uSkTmNIm6E?is=FQ4ViAOyJRm4uTjF) - Sistema sendo executado na prática.
 
 ### 🧠 Decisões Técnicas
 
@@ -71,10 +68,7 @@ Abaixo encontra-se a descrição da organização da raiz do projeto e a finalid
 
 ### 📢 Observações Gerais
 
-*Indique obrigatoriamente no campo abaixo a decisão da equipe quanto à participação na competição:*
-
-* **Participação na Competição:** [ ] Sim, aceitamos participar / [ ] Não vamos participar.
-* *Outras observações gerais (opcional):* Escreva aqui...
+* **Participação na Competição:** [ ] Sim, aceitamos participar / [X] Não vamos participar.
 
 ## 🔧 Como executar o código
 
