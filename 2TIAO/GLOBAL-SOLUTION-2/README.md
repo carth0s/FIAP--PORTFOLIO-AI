@@ -10,9 +10,9 @@
 
 <br>
 
-# Nome do projeto/atividade
+# Global Solution 2
 
-## Nome do grupo
+## VozCidadã AI
 
 ## 👨‍🎓 Integrantes: 
 - Carlos Daniel Silveira do Nascimento - RM88439
@@ -74,7 +74,37 @@ Abaixo encontra-se a descrição da organização da raiz do projeto e a finalid
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório.*
+### Pré-requisitos
+* **Python 3.10 ou superior** instalado na máquina.
+* **Chave de API do Google Gemini** (gratuita via [Google AI Studio](https://aistudio.google.com/)).
+* Conexão com a internet (necessária na primeira execução para download automático dos pesos `yolov8n.pt` e comunicação com a API Gemini).
+
+### Passo a passo de instalação e execução
+
+1. **Clone o repositório privado para sua máquina local:**
+   ```bash
+   git clone https://github.com/[SEU-USUARIO]/[NOME-DO-REPOSITORIO].git
+   cd [NOME-DO-REPOSITORIO]
+   ```
+
+2. **Acesse a pasta do código-fonte e instale as dependências:**
+   ```bash
+   cd src
+   pip install -r requirements.txt
+   ```
+   *(No Windows, caso o comando `pip` não esteja no PATH, utilize `py -m pip install -r requirements.txt`).*
+
+3. **Execute a aplicação web Streamlit:**
+   ```bash
+   streamlit run app.py
+   ```
+   *(Ou `py -m streamlit run app.py` no Windows).*
+
+4. **Utilizando o sistema:**
+   * O navegador abrirá automaticamente em `http://localhost:8501`.
+   * Na barra lateral esquerda (**Configuração e Segurança**), insira sua **Gemini API Key**.
+   * Na aba **Registrar Ocorrência (POC)**, descreva um problema urbano (você pode incluir CPFs, telefones ou e-mails fictícios para validar a anonimização LGPD), anexe uma imagem (`.jpg` ou `.png`) e clique em **Processar Demanda com IA**.
+   * Acesse a aba **Painel de Governança e Impacto (ODS 11)** para visualizar os indicadores consolidados e o histórico auditável.
 
 ---
 
